@@ -1,6 +1,5 @@
 from pandas_datareader import data as web
 import pandas as pd
-import matplotlib.pyplot as plt
 import plotly.express as px
 import streamlit as st
 
