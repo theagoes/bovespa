@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-tabela_empresas =  pd.read_excel("empresas.xlsx")
+tabela_empresas =  pd.read_excel("Empresas.xlsx")
 
 st.set_page_config(page_title="Cotações B3 Web",page_icon=":bar_chart:")
 st.sidebar.header("Filtros")
