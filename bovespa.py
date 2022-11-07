@@ -5,7 +5,7 @@ import streamlit as st
 import openpyxl
 from style import hide_st_style
 
-tabela_empresas =  pd.read_excel("empresas.xlsx")
+tabela_empresas =  pd.read_excel("Empresas.xlsx")
 
 st.set_page_config(page_title="Cotações B3 Web",page_icon=":bar_chart:")
 st.sidebar.header("Filtros")

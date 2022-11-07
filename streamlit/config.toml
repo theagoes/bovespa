@@ -13,8 +13,4 @@ textColor = "#FFF"
 
 # Font family for all text in the app, except code blocks. One of "sans serif", "serif", or "monospace".
 # Default: "sans serif"
-<<<<<<< HEAD
-font = "sans serif"
-=======
-font = "sans serif"
->>>>>>> 5553f3a7c7fd076b3ae55850545d0f3a27b61031
+font = "sans serif"}
