@@ -37,6 +37,7 @@ st.plotly_chart(figs)
 
 layout = go.Layout(
 		title= "Teste",
+		xaxis_tickfont_size = 12,
 	    paper_bgcolor='rgb(255,255,255)',
 	    plot_bgcolor='rgb(229,229,229)',
         legend_title_text = "Test1",
@@ -48,6 +49,8 @@ layout = go.Layout(
 	        showticklabels=True,
 	        tickcolor='rgb(127,127,127)',
 	        ticks='outside',
+         	titlefont_size=14,
+        	tickfont_size=12,
 	        zeroline=False,
 	        title="Teste"
 	    ),
@@ -62,6 +65,10 @@ layout = go.Layout(
 	        zeroline=False,
 	        title="Teste2"
 	    ),
+        autosize=False,
+    	width=800,
+    	height=500,
+    	margin=dict(l=50, r=50, b=100, t=100, pad=4)
 )
 fig = go.Figure()
 fig.add_trace(
@@ -76,6 +83,7 @@ fig.add_trace(
 fig.update_layout(layout)
 fig.update_xaxes(title_text="Período")
 fig.update_yaxes(title_text="Volume")
+fig.update(layout_xaxis_rangeslider_visible=True)
 st.plotly_chart(fig)
 st.markdown("##")
 st.write(df_ticker)
