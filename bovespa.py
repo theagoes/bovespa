@@ -80,7 +80,7 @@ st.plotly_chart(fig)
 st.markdown("##")
 st.write(df_ticker)
 
-
+##
 tc = 'AAPL'
 dt = yf.Ticker(tc)
 tcdt = dt.history(period='1d',start='2021-11-11', end='2022-11-11')
