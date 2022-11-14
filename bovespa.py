@@ -5,6 +5,7 @@ import plotly.express as px
 import plotly.graph_objs  as go
 import streamlit as st
 import cufflinks as cf
+import yfinance as yf
 from style import hide_st_style
 
 TICKERS = ['USIM3','USIM5','VALE3','PETR3','PETR4','BBDC4']
@@ -78,4 +79,13 @@ fig.update_yaxes(title_text="Volume")
 st.plotly_chart(fig)
 st.markdown("##")
 st.write(df_ticker)
+
+
+tc = 'AAPL'
+dt = yf.Ticker(tc)
+tcdt = dt.history(period='1d',start='2021-11-11', end='2022-11-11')
+
+st.line_chart(tcdt.Close)
+st.line_chart(tcdt.Volume)
+st.write(tcdt)
     
